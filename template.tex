@@ -174,7 +174,8 @@
 % Sets citation format
 % and fixes up citations madness
 \usepackage{microtype}  % avoids citations that hang into the margin
-
+%\usepackage{natbib} % a different style %% If using natbib you may need to change your \cite to \citep or \citet
+%\newcommand{\newblock}{} % necessary if using natbib
 %% String comparisons
 \usepackage{pdftexcmds}
 
@@ -294,6 +295,7 @@ What to do about things \cite{Martin_1983}.  What did he say \cite{Rilling_Insel
 % \nocite{}  %% Put any references that you want to include in the bib 
 %               but haven't cited in the braces.
 \bibliographystyle{alpha}  %% This is just my personal favorite style. 
+%\bibliographystyle{plainnat} %% A style for Natbib citation package
 %                              There are many others.
 %\setlength{\bibleftmargin}{0.25in}  % indent each item
 %\setlength{\bibindent}{-\bibleftmargin}  % unindent the first line
